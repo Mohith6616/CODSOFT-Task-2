@@ -1,0 +1,147 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.navbar-header h1 {
+    font-size: 24px;
+    margin: 0;
+    color: burlywood;
+}
+.navbar-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.navbar-links ul li {
+    margin-right: 20px;
+}
+.navbar-links ul li:last-child {
+    margin-right: 0;
+}
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.navbar-links {
+    margin-left: auto;
+}
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+.background-image {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background-image: url("blue.jpeg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.text-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.text-overlay h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.text-overlay p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.text-overlay .cta-button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.text-overlay .cta-button:hover {
+    background-color: #555;
+}
+.about {
+    background-color: white;
+    padding: 40px 0;
+}
+.about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.services {
+    padding: 40px 0;
+}
+.services h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.service-card {
+    flex-basis: calc(30%);
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.service-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0;
+    }
+
+    .navbar h1 {
+        font-size: 20px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+    }
+
+    .service-card {
+        flex-basis: calc(50% - 20px);
+    }
+}
